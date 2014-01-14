@@ -15,21 +15,20 @@
 <script src="/js/bigpipe.js"></script>
 <script src="/js/test.js"></script>
 <script>
+var bigpipe=new Bigpipe();
 function TextController($scope){
-	//angular.bootstrap(document.documentElement);
-	$scope.$apply(function(){
-		$scope.someText = 'You have started your journey';
-	});
+	bigpipe.ready('test',function(data){
+	  $scope.$apply(function(){
+			$scope.someText = data.is;
+		});
+	})
 }
 
 angular.bootstrap(document.documentElement);
 </script>
 
 <script>
-var bigpipe=new Bigpipe();
-bigpipe.ready('test',function(data){
-  var l;
-})
+
 </script>
 
 <script>

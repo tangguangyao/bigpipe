@@ -1,4 +1,3 @@
-
 /*
  * GET home page.
  */
@@ -7,7 +6,6 @@ module.exports = function(app){
     // res.render('index', { 
     //   title:"测试"
     // });
-
     res.render('index', {
         title:"测试"
       },function (err, str) {
