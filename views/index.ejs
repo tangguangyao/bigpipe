@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<script src="/js/jquery.min.js"></script>
+<script src="/js/angular.min.js"></script>
+
+</head>
+<body ng-controller="TextController">
+<p>{{someText}}</p>
+
+
+<script src="/js/underscore.js"></script>
+<script src="/js/bigpipe.js"></script>
+<script src="/js/test.js"></script>
+<script>
+function TextController($scope){
+	//angular.bootstrap(document.documentElement);
+	$scope.$apply(function(){
+		$scope.someText = 'You have started your journey';
+	});
+}
+
+angular.bootstrap(document.documentElement);
+</script>
+
+<script>
+var bigpipe=new Bigpipe();
+bigpipe.ready('test',function(data){
+  var l;
+})
+</script>
+
+<script>
+
+</script>
+</body>
+</html>
